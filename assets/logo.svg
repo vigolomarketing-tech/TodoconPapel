@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Todo con Papel">
+  <title>Todo con Papel</title>
+  <circle cx="60" cy="60" r="58" fill="#FDF8EC" stroke="#F7B26A" stroke-width="3"/>
+
+  <!-- estrellitas decorativas -->
+  <path d="M22 30l2.4 5.6L30 38l-5.6 2.4L22 46l-2.4-5.6L14 38l5.6-2.4L22 30Z" fill="#F9D77E"/>
+  <path d="M96 26l1.8 4.2L102 32l-4.2 1.8L96 38l-1.8-4.2L90 32l4.2-1.8L96 26Z" fill="#B7AEE3"/>
+  <path d="M92 82l1.6 3.8L97.4 88l-3.8 1.6L92 93.4l-1.6-3.8L86.6 88l3.8-1.6L92 82Z" fill="#7EC8B8"/>
+
+  <!-- papelitos volando -->
+  <rect x="20" y="70" width="10" height="10" rx="2" fill="#AEDAEA" transform="rotate(-18 25 75)"/>
+  <rect x="86" y="60" width="9" height="9" rx="2" fill="#F7B26A" transform="rotate(14 90 64)"/>
+
+  <!-- cuerpo de la plotter de corte -->
+  <rect x="34" y="48" width="52" height="26" rx="8" fill="#7EC8B8" stroke="#4A6A9A" stroke-width="2.5"/>
+
+  <!-- carita sonriente -->
+  <circle cx="47" cy="61" r="2.6" fill="#4A6A9A"/>
+  <circle cx="61" cy="61" r="2.6" fill="#4A6A9A"/>
+  <path d="M45 67c3 4 11 4 14 0" stroke="#4A6A9A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- hoja de papel saliendo -->
+  <path d="M70 50 L94 44 L96 58 L74 62 Z" fill="#FFFFFF" stroke="#4A6A9A" stroke-width="2.2" stroke-linejoin="round"/>
+
+  <!-- tijera -->
+  <g stroke="#4A6A9A" stroke-width="2.2" fill="none" stroke-linecap="round">
+    <circle cx="86" cy="30" r="3.2"/>
+    <circle cx="86" cy="42" r="3.2"/>
+    <path d="M89 32 L100 20 M89 40 L100 50"/>
+  </g>
+
+  <!-- patitas de la plotter -->
+  <path d="M40 74v6M80 74v6" stroke="#4A6A9A" stroke-width="3" stroke-linecap="round"/>
+</svg>

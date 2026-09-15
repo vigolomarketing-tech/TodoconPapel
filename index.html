@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo con Papel — Papelería creativa en Longchamps</title>
+<meta name="description" content="Papelería personalizada, souvenirs, sublimación, anillados y globos para cumpleaños y eventos en Longchamps, Buenos Aires. Pedí tu kit personalizado por WhatsApp.">
+<meta name="keywords" content="papelería creativa Longchamps, souvenirs personalizados Longchamps, anillados Longchamps, papelería personalizada Buenos Aires, cotillón personalizado">
+<meta name="author" content="Todo con Papel">
+<link rel="canonical" href="https://todo-con-papel.example/">
+
+<!-- Open Graph / WhatsApp / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Todo con Papel — Papelería creativa en Longchamps">
+<meta property="og:description" content="Todo lo que quieras hecho en papel ♡ Personalizamos cumpleaños, souvenirs, sublimación y anillados en Longchamps, Buenos Aires.">
+<meta property="og:image" content="assets/logo.svg">
+<meta property="og:locale" content="es_AR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Todo con Papel — Papelería creativa en Longchamps">
+<meta name="twitter:description" content="Todo lo que quieras hecho en papel ♡">
+<meta name="twitter:image" content="assets/logo.svg">
+
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="#" class="brand" aria-label="Todo con Papel — inicio">
+      <img id="brand-logo" src="assets/logo.svg" alt="Todo con Papel" class="brand-logo">
+      <span class="brand-name">Todo con Papel</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+      <ul id="nav-list"></ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-cart" id="cart-toggle" aria-haspopup="dialog" aria-controls="cart-drawer" aria-expanded="false">
+        <span class="cart-icon-wrap">
+          <span id="icon-cart"></span>
+          <span class="cart-count" id="cart-count">0</span>
+        </span>
+        <span class="visually-hidden">Ver carrito</span>
+      </button>
+      <a class="btn btn-whatsapp" id="header-whatsapp" href="#" target="_blank" rel="noopener">
+        <span id="icon-whatsapp-header"></span>
+        <span class="btn-wa-label">WhatsApp</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-deco" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal" id="hero-badge">✨ Cumplimos 1 año haciendo papelería con cariño</p>
+      <h1 class="reveal" id="hero-title">Todo lo que quieras, hecho en papel ♡</h1>
+      <p class="hero-subtitle reveal" id="hero-subtitle"></p>
+      <div class="hero-ctas reveal">
+        <a href="#catalogo" class="btn btn-primary" id="hero-cta-primary">Ver productos</a>
+        <a href="#kit-cumple" class="btn btn-secondary" id="hero-cta-secondary">Armá tu kit de cumple</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORÍAS ============ -->
+  <section class="section" id="categorias">
+    <div class="container">
+      <h2 class="section-title reveal">Nuestras categorías</h2>
+      <p class="section-subtitle reveal">Elegí qué estás buscando y te mostramos todo lo que podemos hacer.</p>
+      <div class="categories-grid" id="categories-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CATÁLOGO ============ -->
+  <section class="section section-alt" id="catalogo">
+    <div class="container">
+      <h2 class="section-title reveal">Catálogo</h2>
+      <p class="section-subtitle reveal">Precios de referencia — consultanos por cantidades y combinaciones.</p>
+
+      <div class="catalog-filters reveal" id="catalog-filters" role="tablist" aria-label="Filtrar por categoría"></div>
+
+      <div class="catalog-grid" id="catalog-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ KIT DE CUMPLE ============ -->
+  <section class="section" id="kit-cumple">
+    <div class="container">
+      <h2 class="section-title reveal">Armá tu kit de cumple</h2>
+      <p class="section-subtitle reveal">Contanos sobre el festejo y armamos un pedido a medida en simples pasos.</p>
+
+      <form class="kit-builder reveal" id="kit-form">
+        <div class="kit-steps" id="kit-steps"></div>
+
+        <div class="kit-field">
+          <label for="kit-tematica">Temática del cumple</label>
+          <input type="text" id="kit-tematica" name="tematica" placeholder="Ej: dinosaurios, unicornios, fútbol..." required>
+        </div>
+
+        <div class="kit-row">
+          <div class="kit-field">
+            <label for="kit-nombre">Nombre del cumpleañero/a</label>
+            <input type="text" id="kit-nombre" name="nombre" placeholder="Ej: Sofía" required>
+          </div>
+          <div class="kit-field">
+            <label for="kit-edad">Edad que cumple</label>
+            <input type="number" id="kit-edad" name="edad" min="0" max="120" placeholder="Ej: 5">
+          </div>
+        </div>
+
+        <div class="kit-row">
+          <div class="kit-field">
+            <label for="kit-fecha">Fecha del evento</label>
+            <input type="date" id="kit-fecha" name="fecha">
+          </div>
+          <div class="kit-field">
+            <label for="kit-invitados">Cantidad de invitados</label>
+            <input type="number" id="kit-invitados" name="invitados" min="1" placeholder="Ej: 15">
+          </div>
+        </div>
+
+        <div class="kit-field">
+          <span class="kit-field-label">¿Qué ítems querés incluir?</span>
+          <div class="kit-items" id="kit-items"></div>
+        </div>
+
+        <div class="kit-field">
+          <label for="kit-aclaraciones">Aclaraciones (opcional)</label>
+          <textarea id="kit-aclaraciones" name="aclaraciones" rows="3" placeholder="Colores favoritos, alguna idea puntual, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Ver resumen y enviar por WhatsApp</button>
+      </form>
+
+      <div class="kit-summary" id="kit-summary" hidden aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============ COTIZADOR ANILLADOS ============ -->
+  <section class="section section-alt" id="cotizador">
+    <div class="container">
+      <h2 class="section-title reveal">Cotizador de anillados</h2>
+      <p class="section-subtitle reveal">Contanos qué necesitás anillar y te pasamos el precio por WhatsApp.</p>
+
+      <form class="quote-form reveal" id="cotizador-form">
+        <div class="kit-row">
+          <div class="kit-field">
+            <label for="cot-tamanio">Tamaño</label>
+            <select id="cot-tamanio" name="tamanio"></select>
+          </div>
+          <div class="kit-field">
+            <label for="cot-hojas">Cantidad de hojas</label>
+            <input type="number" id="cot-hojas" name="hojas" min="1" placeholder="Ej: 80" required>
+          </div>
+        </div>
+
+        <div class="kit-row">
+          <div class="kit-field">
+            <label for="cot-tapa">Tipo de tapa</label>
+            <select id="cot-tapa" name="tapa"></select>
+          </div>
+          <div class="kit-field">
+            <label for="cot-copias">Cantidad de copias</label>
+            <input type="number" id="cot-copias" name="copias" min="1" value="1" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Consultar precio por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO TRABAJAMOS ============ -->
+  <section class="section" id="como-trabajamos">
+    <div class="container">
+      <h2 class="section-title reveal">Cómo trabajamos</h2>
+      <div class="steps-grid" id="steps-grid"></div>
+      <p class="steps-note reveal" id="steps-note"></p>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section section-alt" id="galeria">
+    <div class="container">
+      <h2 class="section-title reveal">Galería</h2>
+      <p class="section-subtitle reveal">
+        Seguinos en Instagram para ver más trabajos:
+        <a id="gallery-ig-link" href="#" target="_blank" rel="noopener" class="ig-link"></a>
+      </p>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title reveal">Preguntas frecuentes</h2>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="Todo con Papel" class="footer-logo">
+      <p id="footer-text"></p>
+    </div>
+    <div class="footer-links">
+      <a id="footer-instagram" href="#" target="_blank" rel="noopener" class="footer-link">
+        <span id="icon-instagram-footer"></span> <span id="footer-instagram-label"></span>
+      </a>
+      <a id="footer-whatsapp" href="#" target="_blank" rel="noopener" class="footer-link">
+        <span id="icon-whatsapp-footer"></span> WhatsApp
+      </a>
+      <span class="footer-link footer-zona">
+        <span id="icon-location-footer"></span> <span id="footer-zona"></span>
+      </span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="footer-year"></span> Todo con Papel · Demo web</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP BUTTON ============ -->
+<a href="#" id="floating-whatsapp" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <span id="icon-whatsapp-float"></span>
+</a>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="drawer-overlay" id="drawer-overlay" hidden></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de pedido" hidden>
+  <div class="cart-header">
+    <h2>Tu pedido</h2>
+    <button class="icon-btn" id="cart-close" aria-label="Cerrar carrito"><span id="icon-close-cart"></span></button>
+  </div>
+  <div class="cart-body" id="cart-body">
+    <p class="cart-empty" id="cart-empty">Todavía no agregaste productos. ¡Mirá el catálogo!</p>
+    <ul class="cart-items" id="cart-items"></ul>
+  </div>
+  <div class="cart-footer">
+    <button class="btn btn-whatsapp btn-block" id="cart-send-whatsapp">Enviar pedido por WhatsApp</button>
+  </div>
+</aside>
+
+<!-- ============ PRODUCT PERSONALIZATION MODAL ============ -->
+<div class="modal-overlay" id="modal-overlay" hidden></div>
+<div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <button class="icon-btn modal-close" id="modal-close" aria-label="Cerrar"><span id="icon-close-modal"></span></button>
+  <h3 id="modal-title">Personalizar producto</h3>
+  <form id="modal-form">
+    <div class="kit-field">
+      <label for="modal-nombre">Nombre a poner</label>
+      <input type="text" id="modal-nombre" placeholder="Ej: Valentina">
+    </div>
+    <div class="kit-field">
+      <label for="modal-tematica">Temática / colores</label>
+      <input type="text" id="modal-tematica" placeholder="Ej: rosa y dorado, unicornios">
+    </div>
+    <div class="kit-row">
+      <div class="kit-field">
+        <label for="modal-fecha">Fecha del evento</label>
+        <input type="date" id="modal-fecha">
+      </div>
+      <div class="kit-field">
+        <label for="modal-cantidad">Cantidad</label>
+        <input type="number" id="modal-cantidad" min="1" value="1">
+      </div>
+    </div>
+    <div class="kit-field">
+      <label for="modal-aclaraciones">Aclaraciones</label>
+      <textarea id="modal-aclaraciones" rows="2" placeholder="Algo más que quieras contarnos"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Agregar al pedido</button>
+  </form>
+</div>
+
+<noscript>
+  <p style="text-align:center; padding:2rem; font-family:sans-serif;">
+    Esta página necesita JavaScript habilitado para mostrar el catálogo completo.
+    Escribinos por Instagram @todo.conpapel o WhatsApp.
+  </p>
+</noscript>
+
+<script src="js/data.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
